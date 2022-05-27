@@ -15,7 +15,8 @@ def index():
         lender = request.form.get('lender')
         amount = request.form.get('amount')
 
-        write_block(borrower=borrower, lender=lender, amount=amount)
+
+    write_block(borrower=borrower, lender=lender, amount=amount)
 
     return render_template('index.html')
 
